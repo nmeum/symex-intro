@@ -18,7 +18,7 @@ Within the Guix shell run the following commands:
 
 	$ make sim
 
-Alternatively, you can also try to use KLEE's Docker image:
+Alternatively, you can also try to use [KLEE's Docker image]:
 
 	$ docker run --rm  -v "$(pwd):/code" -it klee/klee
 
@@ -64,6 +64,7 @@ Further, the [KLEE documentation] includes additional practical examples:
 [symbolic execution]: https://notes.8pit.net/notes/xg1j.html
 [HO26]: https://talks.hackover.de/ho26/talk/CKUL8T/
 [Guix]: https://guix.gnu.org
+[KLEE's Docker image]: https://hub.docker.com/r/klee/klee
 [Base64]: https://doi.org/10.17487/RFC4648
 [RIOT]: https://riot-os.org
 [RIOT base64]: https://github.com/RIOT-OS/RIOT/blob/2026.04/sys/base64/base64.c
