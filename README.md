@@ -45,7 +45,7 @@ To enable state merging, invoke `make` as follows:
 	$ CFLAGS=-DKLEE_STATE_MERGING make -B
 
 This will merge multiple execution paths of `getsymbol` / `getcode` into a single conjugated SMT-LIB expression.
-Thereby, increasing SMT-LIB query complexity by reducing the number of execution paths.
+Thereby, increasing SMT-LIB query complexity but reducing the number of execution paths.
 
 To play around with other optimizations, refer to the [KLEE documentation].
 
