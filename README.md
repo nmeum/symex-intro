@@ -1,4 +1,4 @@
-# An Introduction to Automated Software Testing using Symbolic Execution
+# An Introduction to Symbolic Execution
 
 Material for an introduction to [symbolic execution], a [presentation at HO26][HO26].
 
