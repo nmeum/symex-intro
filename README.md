@@ -1,6 +1,6 @@
 # An Introduction to Symbolic Execution
 
-Material for an introduction to [symbolic execution], a [presentation at HO26][HO26].
+Material for an introduction to [symbolic execution], a [presentation at Hackover'26][HO26].
 
 <!-- TODO: Reference the media.ccc.de recording here. -->
 
