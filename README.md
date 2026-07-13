@@ -34,24 +34,24 @@ This size can be configured through the `INPUT_SIZE` variable, for example:
 
 	$ INPUT_SIZE=2 make -B
 
-For an input size of 3, 625 execution path should be discovered.
+For an input size of 3 bytes, 625 execution paths should be discovered.
 On my hardware, this takes around 2 minutes.
-Depending on the size, the number of execution paths and the time required to discover them will vary.
+Depending on the size, the number of execution paths, and the time required to discover them will vary.
 
-Further, it is possible to experiment with various KLEE optimization to speedup this example.
+Further, it is possible to experiment with various KLEE optimizations to speed up this example.
 A technique particularly beneficial to this example is [state merging].
-To enable state merging, invoke the `make` as follows:
+To enable state merging, invoke `make` as follows:
 
 	$ CFLAGS=-DKLEE_STATE_MERGING=1 make -B
 
 This will merge multiple execution paths of `getsymbol` / `getcode` into a single conjugated SMT-LIB expression.
-Thereby, increasing query complexity by reducing the amount of execution paths.
+Thereby, increasing SMT-LIB query complexity by reducing the number of execution paths.
 
 To play around with other optimizations, refer to the [KLEE documentation].
 
 ## More Information
 
-The following material provides more approachable background information:
+The following material provides additional background information:
 
 * [Symbolic Execution for Software Testing: Three Decades Later](https://doi.org/10.1145/2408776.2408795)
 * [A Survey of Symbolic Execution Techniques](https://doi.org/10.1145/3182657)
