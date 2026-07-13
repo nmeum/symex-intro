@@ -42,7 +42,7 @@ Further, it is possible to experiment with various KLEE optimizations to speed u
 A technique particularly beneficial to this example is [state merging].
 To enable state merging, invoke `make` as follows:
 
-	$ CFLAGS=-DKLEE_STATE_MERGING=1 make -B
+	$ CFLAGS=-DKLEE_STATE_MERGING make -B
 
 This will merge multiple execution paths of `getsymbol` / `getcode` into a single conjugated SMT-LIB expression.
 Thereby, increasing SMT-LIB query complexity by reducing the number of execution paths.
