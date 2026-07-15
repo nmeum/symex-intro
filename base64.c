@@ -67,6 +67,8 @@ static char __getsymbol(uint8_t code, bool urlsafe)
     }
 
     if (code <= BASE64_CAPITAL_UPPER_BOUND) {
+        // XXX: Uncomment to introduce an exemplary bug.
+        //return (code + 'B');
         return (code + 'A');
     }
 
