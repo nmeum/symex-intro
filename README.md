@@ -2,7 +2,7 @@
 
 Material for an introduction to [symbolic execution], a [presentation at Hackover'26][HO26].
 
-<!-- TODO: Reference the media.ccc.de recording here. -->
+[![Video player preview of the talk recording.](https://files.8pit.net/img/ho26-symbolic-execution.png)](https://media.ccc.de/v/ho26-146-an-introduction-to-automated-software-testing-using-symbolic-execution)
 
 This repository includes the files required to experiment with the live demonstration from the presentation.
 Specifically, it includes the setup required to verify the [Base64] implementation provided by the [RIOT operating system][RIOT].
